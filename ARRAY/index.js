@@ -1,4 +1,4 @@
-//actividad 1
+/*//actividad 1
 const numbers = [1, 2, 3, 4, 5];
 numbers[0] = 10;
 numbers[2] = 30;
@@ -8,19 +8,19 @@ console.log(numbers);
 y en la posicion 0 se remplaza el 1 por el 10 y en la posicion 2 remplaza el 3 por el 30 
 [10,2,30,4,5]*/
 
-//actividad 4
+/*//actividad 4
 let numero = [10, 2, 4, 3, 7];
 function sumarPares(numeros) {
   let suma = 0;
-  for (let t = 0; t < numero.length; t++) {
+  for (let t = 0; t < numeros.length; t++) {
     if (numeros[t] % 2 === 0) {
       suma = suma + numeros[t];
     }
     console.log(suma);
-    i++;
+    t++;
   }
-}
-//actividad 3
+}*/
+/*//actividad 3
 sumarPares(numero);
 
 let palabras = ["juego", "casa", "mesa"];
@@ -30,3 +30,41 @@ function terminanEnA(words) {
 }
 
 terminanEnA(palabras);
+*/
+//array vacio 1, hacer for con todos los numbers, y dentro del for declarar variable que almacena dato absoluto de la posicion y ese dato se pushea al array vacio creado, en el return final realizar sort().
+//actividad 5:
+/*let numeros = [-2, 5, -6, 3, -10];
+let Numeritos = [];
+function sortAbsoluteNumbers(numbers) {
+  for (let number of numbers) {
+    const numerosEnteros = Math.abs(number);
+    Numeritos.push(numerosEnteros);
+  }
+  return Numeritos.sort(function (a, b) {
+    return a - b;
+  });
+}
+console.log(sortAbsoluteNumbers(numeros));*/
+
+//actividad 6:
+const words = [
+  "hola",
+  "tres",
+  "uno",
+  "Universidad",
+  "de",
+  "Buenos Aires",
+  "pepito",
+  "celular",
+];
+
+const word = "pepito";
+let palabrasLargas = [];
+function buscaPalabras(words, word) {
+  for (let i = 0; i > word.legth; i++) {
+    if(words[i] > word.legth){
+  palabrasLargas = 
+    } 
+  }
+}
+console.log(largoPalabra);
