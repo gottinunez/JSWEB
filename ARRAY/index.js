@@ -47,7 +47,7 @@ function sortAbsoluteNumbers(numbers) {
 console.log(sortAbsoluteNumbers(numeros));*/
 
 //actividad 6:
-const words = [
+/*const words = [
   "hola",
   "tres",
   "uno",
@@ -57,14 +57,35 @@ const words = [
   "pepito",
   "celular",
 ];
-
 const word = "pepito";
-let palabrasLargas = [];
+
 function buscaPalabras(words, word) {
-  for (let i = 0; i > word.legth; i++) {
-    if(words[i] > word.legth){
-  palabrasLargas = 
-    } 
+  let palabrasLargas = [];
+  const posicionPalabrita = words.indexOf(word);
+  console.log(posicionPalabrita);
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > posicionPalabrita) {
+      palabrasLargas.push(words[i]);
+    }
   }
+  return palabrasLargas;
 }
-console.log(largoPalabra);
+console.log(buscaPalabras(words, word));
+*/
+
+//actividad objetos 1:
+
+function createObject(name, subs) {
+  const obj = {
+    name,
+    subs,
+    hash: name.length * subs,
+    getStatus: function () {
+      return `el canal ${name} tiene ${subs}`;
+    },
+  };
+  return obj;
+}
+
+const personitas = createObject("rulorolando", 2);
+console.log(personitas.hash);
