@@ -75,7 +75,7 @@ console.log(buscaPalabras(words, word));
 
 //actividad objetos 1:
 
-function createObject(name, subs) {
+/*function createObject(name, subs) {
   const obj = {
     name,
     subs,
@@ -88,4 +88,33 @@ function createObject(name, subs) {
 }
 
 const personitas = createObject("rulorolando", 2);
-console.log(personitas.hash);
+console.log(personitas.hash);*/
+
+// actividad atajo de objetos, preguntas:
+/*1- ¿Qué se imprimirá en la consola al ejecutar el siguiente código? y por que?
+const person = {
+  name: "John",
+  age: 30,
+  hobbies: ["reading", "music", "sports"],
+};
+
+const { weight = 70, height = 180 } = person;
+console.log(weight, height);
+/*RTA: Lo que va a imprimir en la consola son 2 valores numericos los cuales
+son 70 y 180, lo imprime porq primero saca a la persona y despues la altura
+y el peso
+*/
+
+//2- ¿Qué se imprimirá en la consola al ejecutar el siguiente código? Y por que?
+/*const person = {
+  name: "John",
+  age: 30,
+  hobbies: ["reading", "music", "sports"],
+};
+
+const { age: personAge } = person;
+console.log(age);
+rta: no funciona porque esta mal llamada la constante
+
+3- ¿Cómo se llama el atajo que nos permite recuperar el valor de una propiedad de un objeto?
+rta: el atajo se llama destructuracion
