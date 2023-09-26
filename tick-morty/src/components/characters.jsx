@@ -9,21 +9,24 @@ export function Characters() {
       .then((data) => setPersonajes(data.results));
   }, []);
   return (
-    <ul>
+    <ul className="todo">
       {personajes.map((item, index) => (
-        <li key={index}>
-          <h3>{item.name}</h3>
-          <p>
-            {item.status} - {item.species}
-          </p>
-          <p>Last known location:</p>
-          <h3>Earth (Replacement Dimension)</h3>
-          <p>First seen in:</p>
-          <h3>A Rickle in Time</h3>
-          <img src={item.image}></img>
-        </li>
+        <div className="personajes" key={index}>
+          <div className="img">
+            <img src={item.image}></img>
+          </div>
+          <div className="info">
+            <h3>{item.name}</h3>
+            <p>
+              {item.status} - {item.species}
+            </p>
+            <p>Last known location:</p>
+            <h3>{item.location.name}</h3>
+            <p>First seen in:</p>
+            <h3>{}</h3>
+          </div>
+        </div>
       ))}
-      ;
     </ul>
   );
 }
