@@ -1,12 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useCharacters } from "../hooks/useCharacters";
 import "../App.css";
-export function Characters() {
-  const [personajes, setPersonajes] = useState([]);
 
+export function Characters() {
+  const { getPersonajes, personajes } = useCharacters();
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character")
-      .then((response) => response.json())
-      .then((data) => setPersonajes(data.results));
+    getPersonajes();
   }, []);
   return (
     <ul className="todo">
