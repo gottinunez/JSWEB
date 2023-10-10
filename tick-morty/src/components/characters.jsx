@@ -11,18 +11,20 @@ export function Characters() {
     <ul className="todo">
       {personajes.map((item, index) => (
         <div className="personajes" key={index}>
-          <div className="img">
-            <img src={item.image}></img>
-          </div>
-          <div className="info">
-            <h3>{item.name}</h3>
-            <p>
-              {item.status} - {item.species}
-            </p>
-            <p>Last known location:</p>
-            <h3>{item.location.name}</h3>
-            <p>First seen in:</p>
-            <h3>{}</h3>
+          <div class="imgyinfo">
+            <div className="img">
+              <img src={item.image}></img>
+            </div>
+            <div className="info">
+              <h3>{item.name}</h3>
+              <p>
+                {item.status} - {item.species}
+              </p>
+              <h3>Last known location:</h3>
+              <h2>{item.location.name}</h2>
+              <h3>First seen in:</h3>
+              <h2>{item.origin.name}</h2>
+            </div>
           </div>
         </div>
       ))}
