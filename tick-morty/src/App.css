@@ -41,10 +41,6 @@ img {
 .info {
   margin-left: 2%;
 }
-.titulo {
-  display: flex;
-  justify-content: center;
-}
 
 .botones {
   margin: 2%;
@@ -120,6 +116,13 @@ h1 {
   line-height: 1.1;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
 }
+
+h4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 ul {
   display: block;
   list-style-type: disc;
@@ -128,4 +131,75 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+}
+
+.terceraparte {
+  background: rgb(19, 17, 17);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.botonesabajo {
+  margin-top: 60px;
+  align-items: center;
+}
+
+.character,
+.locations,
+.episodes {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.creador {
+  display: flex;
+  margin-left: 90px;
+  margin-top: 45px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.vivo {
+  background-color: rgb(85, 204, 68);
+}
+
+.muerto {
+  background-color: rgb(214, 61, 46);
+}
+
+.desaparecido {
+  background-color: rgb(158, 158, 158);
+}
+
+.status_icon {
+  display: flex;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 0.375rem;
+  border-radius: 50%;
+}
+
+.Fondo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.rickAndMorty {
+  fill: rgb(245, 245, 245);
+  position: absolute;
+  bottom: 100%;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 40px;
+  font-size: 300%;
 }
