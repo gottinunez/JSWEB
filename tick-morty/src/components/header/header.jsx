@@ -1,8 +1,10 @@
 import { Svgfondo } from "../utilidades/svgfondo";
+import { Svgtop } from "../utilidades/svgtop";
 function Header() {
   return (
     <header>
-      <div className="fotoyboton">
+      <div className="minifoto">
+        <Svgtop />
         <div className="botones">
           <a className="docs" href="https://rickandmortyapi.com/documentation">
             Docs
@@ -17,12 +19,12 @@ function Header() {
             SUPPORT US
           </a>
         </div>
-        <div className="titulo">
-          <h1> The Rick and Morty API</h1>
-        </div>
-        <div className="Fondo">
-          <Svgfondo />
-        </div>
+      </div>
+      <div className="titulo">
+        <h1> The Rick and Morty API</h1>
+      </div>
+      <div className="Fondo">
+        <Svgfondo />
       </div>
     </header>
   );
