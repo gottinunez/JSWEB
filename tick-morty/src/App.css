@@ -210,3 +210,8 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+
+.texto:hover {
+  cursor: pointer;
+  color: rgb(255, 152, 0);
+}
